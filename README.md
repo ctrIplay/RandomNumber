@@ -1,7 +1,7 @@
 # RandomNumber
 Simple random number generator
 
-Generates a new number between 1 and 100 every two seconds (default)
+Generates a new number between 0.0 and 100.0 every two seconds (default)
 
 Right click on the number to open a menu containing settings
 
