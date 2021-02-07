@@ -27,7 +27,16 @@ namespace RandomNumber
                 timer1.Enabled = false;
         }
 
-        private void UpdateNumber() => labelNumber.Text = random.Next(1, 101).ToString();
+        private void UpdateNumber()
+        {
+            string nextNumber = random.Next(0, 1001).ToString();
+            int len = nextNumber.Length;
+
+            nextNumber = nextNumber.Insert(len - 1, ".");
+            if (len == 1) nextNumber = '0' + nextNumber;
+
+            labelNumber.Text = nextNumber;
+        }
 
         private void SetSelectedIntervalItem()
         {
