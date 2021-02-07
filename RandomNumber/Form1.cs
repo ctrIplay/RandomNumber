@@ -101,7 +101,7 @@ namespace RandomNumber
             UpdateNumber();
         }
 
-        private void labelNumber_Click(object sender, EventArgs e)
+        private void labelNumber_MouseDown(object sender, EventArgs e)
         {
             if (Settings.UpdateNumberOnClick)
             {

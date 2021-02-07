@@ -62,7 +62,7 @@
             this.labelNumber.TabIndex = 0;
             this.labelNumber.Text = "0";
             this.labelNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelNumber.Click += new System.EventHandler(this.labelNumber_Click);
+            this.labelNumber.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelNumber_MouseDown);
             // 
             // contextMenuStrip1
             // 
